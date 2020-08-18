@@ -1,16 +1,9 @@
-import React from 'react'
-import './App.css'
-import 'tachyons'
-import Navbar from './layout/Navbar'
-import Search from './components/Search'
-import MemberList from './components/MemberList'
-
 export const members = [
   {
     id: 1,
     img:
       'https://i.pinimg.com/736x/56/ce/f7/56cef7bf9e1a552f457daa34121605da.jpg',
-    name: 'Ned Plimpton "Kingsley Zissou"',
+    name: 'Ned Plimpton "Kingsley Zisso"',
     role:
       "Longtime Zissou fan whose mother has recently died, and he believes that Zissou is his father. After they meet at Zissou's latest premiere, Ned takes leave from his job as an airline pilot in Kentucky to join his crew.",
     favorite_drink: 'Old-Fashioned',
@@ -171,15 +164,6 @@ export const members = [
     quote: '',
   },
 ]
-
-function App() {
-  return (
-    <div className='tc ma'>
-      <Navbar />
-      <Search />
-      <MemberList members={members} />
-    </div>
-  )
+export default {
+  members,
 }
-
-export default App
